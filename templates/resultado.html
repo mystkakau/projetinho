@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Resultado do Fechamento</title>
+</head>
+<body>
+    <h1>Resultado do Fechamento</h1>
+
+    <p><strong>Comissão:</strong> R$ {{ comissao }}</p>
+    <p><strong>Total de Boletas:</strong> R$ {{ boletas }}</p>
+    <p><strong>Valor que deve à casa:</strong> R$ {{ casa }}</p>
+
+    <p><strong>Situação:</strong></p>
+    <pre>{{ situacao }}</pre>
+
+    {% if alerta %}
+        <p style="color:red;"><strong>Alerta:</strong> {{ alerta }}</p>
+    {% endif %}
+
+    <a href="/">Voltar</a>
+</body>
+</html>
